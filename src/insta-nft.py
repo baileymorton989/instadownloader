@@ -18,14 +18,12 @@ class InstaNFT:
     
     #initialize with the login credentials
     def __init__(self, username, password, photo_range):
-        
         self.username = username
         self.password = password
         self.photo_range = photo_range
          
     #get the most recent image
     def get_most_recent_image(self):
-
         #Get instance
         self.loader = instaloader.Instaloader()
         
@@ -44,7 +42,6 @@ class InstaNFT:
 
     #get any image
     def get_image(self):
-
         #Get instance
         self.loader = instaloader.Instaloader()
         
@@ -67,7 +64,6 @@ class InstaNFT:
     
     #get all images
     def get_all_images(self):
-
         #Get instance
         self.loader = instaloader.Instaloader()
         
