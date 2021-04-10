@@ -1,5 +1,5 @@
 #import the libraries
-import insta-nft
+from insta-nft import *
 
 if __name__ == '__main__':
     
