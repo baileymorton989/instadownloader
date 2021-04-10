@@ -3,11 +3,8 @@
 #libraries
 import instaloader
 import os 
-import shutil
 from pathlib import Path
 from PIL import Image
-import argparse
-import numpy as np
 
 #parse the arguments
 def input_credentials():
