@@ -1,5 +1,5 @@
 #import the libraries
-from insta-nft import *
+from insta-nft import InstaNFT, input_credentials
 
 if __name__ == '__main__':
     
@@ -7,7 +7,7 @@ if __name__ == '__main__':
     username, password, photo_range = input_credentials()
     
     #get credentials
-    instanft = insta-nft.InstaNFT(username, password, photo_range)
+    instanft = InstaNFT(username, password, photo_range)
     
     #get the image
     images = instanft.get_image()
