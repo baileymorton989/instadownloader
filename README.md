@@ -1,7 +1,5 @@
 # insta-nft
-A Python library for generating NFTS from Instagram photos.
-
-
+`insta-nft` is a Python library for generating NFTS from Instagram photos.
 
 # TODO
 1. Create javascript server with Nodejs and Express
