@@ -39,7 +39,7 @@ class TkinterSelector:
             self.label_username.pack()
             self.entry_username.pack()
             self.label_password = tk.Label(self.root, text='Enter Password')
-            self.entry_password = tk.Entry(self.root)
+            self.entry_password = tk.Entry(self.root, show='*')
             self.label_photo = tk.Label(self.root, text='Enter "All", "Most Recent", or the N-th most recent photos')
             self.entry_photo = tk.Entry(self.root)
             self.label_password.pack()
