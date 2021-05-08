@@ -19,7 +19,7 @@ class TkinterSelector:
             #create the root
             self.root = tk.Tk()
             self.root.geometry("400x300")
-            self.root.title('Enter the Credenentials and Select Photos')
+            self.root.title('Enter the Credentials and Select Photos')
             self.label_username = tk.Label(self.root, text='Enter Username')
             self.entry_username= tk.Entry(self.root)
             self.label_username.pack()
