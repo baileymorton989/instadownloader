@@ -11,13 +11,6 @@ from tkinter import filedialog
 import urllib
 import base64
 
-#parse the arguments
-def input_credentials():
-    username = input('Enter Username: ')
-    password = input('Enter Password: ')
-    photo_range = int(input('Enter the Index of the Photos: '))
-    return username, password, photo_range
-
 #create the tkiner selector object
 class TkinterSelector:
         
@@ -26,7 +19,7 @@ class TkinterSelector:
             #create the root
             self.root = tk.Tk()
             self.root.geometry("400x300")
-            self.root.title('Enter the Credenentials and Select Photos')
+            self.root.title('Enter the Credentials and Select Photos')
             self.label_username = tk.Label(self.root, text='Enter Username')
             self.entry_username= tk.Entry(self.root)
             self.label_username.pack()
