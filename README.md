@@ -1,5 +1,5 @@
-# insta-nft
-`insta-nft` is a Python library for generating NFTS from Instagram photos.
+# insta-downloader
+`insta-downloader` is a Python library for scraping and storing Instagram photos.
 
 # TODO
 1. Create javascript server with Nodejs and Express
