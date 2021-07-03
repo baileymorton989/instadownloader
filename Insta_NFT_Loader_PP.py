@@ -1,11 +1,15 @@
-#we will use the script to scrape an insta account, turn them into NFTs, and then upload them for purchase
-
-#libraries
+#for interacting with the instagram api
 import instaloader
+
+#for directory handling
 import os 
 import shutil
 from pathlib import Path
+
+#for image handling
 from PIL import Image
+
+#for creating GUIs
 import tkinter as tk
 from tkinter import filedialog
 import urllib
@@ -55,12 +59,13 @@ class TkinterSelector:
             #get range of time
             return self.username, self.password, self.photo
 
-#InstaNFT class
-class InstaNFT:
+#class for storing and scraping instagram photos
+class InstaDownloader:
     
     #initialize with the login credentials
     def __init__(self, username, password, photo_range):
         
+        #credentials
         self.username = username
         self.password = password
         self.photo_range = photo_range
@@ -68,10 +73,10 @@ class InstaNFT:
     #get the most recent image
     def get_most_recent_image(self):
 
-        #Get instance
+        #start an instagram session, using the instaloader api
         self.loader = instaloader.Instaloader()
         
-        # Optionally, login or load session
+        #optionally, login or load session
         self.loader.login(self.username, self.password)
         
         #download the photos
@@ -142,11 +147,7 @@ class InstaNFT:
                         shutil.rmtree(self.file_path)
                 except Exception as e:
                     print('Failed to delete %s. Reason: %s' % (self.file_path, e))
-                    
-    #connect to your digital wallet
-    def connect_to_digital_wallet(self):
-        pass
-        
+                            
 if __name__ == '__main__':
     
     #get the credentials
@@ -160,18 +161,18 @@ if __name__ == '__main__':
         print('Not an integer')
 
     #get credentials
-    instanft = InstaNFT(username, password, photo_range)
+    instadownloader= InstaDownloader(username, password, photo_range)
     
     #download the images
     try:
         if photo_range  == 'All':
-            images = instanft.get_all_images()
+            images = instadownloader.get_all_images()
         elif photo_range == 'Most Recent':
-            images = instanft.get_most_recent_image()
+            images = instadownloader.get_most_recent_image()
         elif type(photo_range) == int:
-            images = images = instanft.get_image()
+            images = images = instadownloader.get_image()
     except Exception as e:
         print(e)
     
     #empty the directory
-    instanft.empty_directory()
+    instadownloader.empty_directory()
