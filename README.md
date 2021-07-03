@@ -1,7 +1,7 @@
 # insta-downloader
 `insta-downloader` is a Python library for scraping and storing Instagram photos.
 
-# TODO
+### TODO
 	- [ ]  Create javascript server with Nodejs and Express
 	- [ ] ~~Python client that connects to server and makes requests~~
 	- [ ] Use `npm python-shell` to run python code on server
