@@ -179,7 +179,7 @@ class InstaDownloader:
                         shutil.rmtree(self.file_path)
                 except Exception as e:
                     print('Failed to delete %s. Reason: %s' % (self.file_path, e))
-              return None
+        return None
                     
     #save pickle file
     def save_pickle_file(self):
