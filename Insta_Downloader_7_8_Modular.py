@@ -179,6 +179,7 @@ class InstaDownloader:
                         shutil.rmtree(self.file_path)
                 except Exception as e:
                     print('Failed to delete %s. Reason: %s' % (self.file_path, e))
+              return None
                     
     #save pickle file
     def save_pickle_file(self):
@@ -186,6 +187,7 @@ class InstaDownloader:
         pickle.dump(self.images, open(f'{self.profile.username}_{self.today}_raw_images.pkl','wb'))
         self.array_images = [np.array(image) for image in self.images]
         pickle.dump(self.array_images, open(f'{self.profile.username}_{self.today}_array_images.pkl','wb'))
+        return None
                 
 if __name__ == '__main__':
     
