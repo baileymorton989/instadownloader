@@ -26,7 +26,7 @@ import warnings
 class TkinterSelector:
         
         #select the profile type
-        def profile_selector(self):
+        def profile_entry(self):
             #create the root
             self.root = tk.Tk()
             self.root.geometry("400x300")
