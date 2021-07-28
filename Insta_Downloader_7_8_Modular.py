@@ -204,6 +204,7 @@ if __name__ == '__main__':
         photo_range = int(photo_range)
     except:
         print('Not an integer-based photo range')
+        print('')
         
     #get credentials
     instadownloader = InstaDownloader(username, password, photo_range, profile_type)
