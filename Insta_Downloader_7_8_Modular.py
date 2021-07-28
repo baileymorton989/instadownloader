@@ -200,9 +200,11 @@ if __name__ == '__main__':
     username, password, photo_range = selector.photo_entry()
     
     #convert the photo range to integer if downloading range of photos
-    if photo_range != 'All' or photo_range!= 'Most Recent':
+    try:
         photo_range = int(photo_range)
-
+    except:
+        print('Not an integer-based photo range')
+        
     #get credentials
     instadownloader = InstaDownloader(username, password, photo_range, profile_type)
     
