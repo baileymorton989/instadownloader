@@ -4,7 +4,7 @@
 
 The script will save .jpg files for the photos downloaded, a pickle file with the raw .jpg files and a pickle file with the photos converted to numpy arrays. These photos will be stored in a folder with the following format : {username}_{today's date}, where today's date is in the format "MM_DD_YY".
 
-To read more about the documentation, visit the [docs](https://github.com/baileymorton989/instadownloader/tree/main/docs) folder.
+To read more about the documentation, visit the [src](https://github.com/baileymorton989/instadownloader/tree/main/src) folder.
 
 ## Installation
 
