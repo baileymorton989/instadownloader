@@ -1,9 +1,10 @@
 ﻿# instadownloader
 
-`instadownloader` is a Python library built on top of [instaloader](https://instaloader.github.io/) for scraping and storing Instagram photos to generate training sets. It is currently designed so that a user can download "All Photos", the "Most Recent" Photo, or the Nth-most recent photos, for both public and private users. For private users, the login credentials must be provided.
-The script will save the .jpg files for the photos downloaded, a pickkle file with those raw .jpg files and a pickle file with the photos converted to numpy arrays. These photos will be stored in a folder with the following format : {user_name}_{today's date}, where today's date is in the format "MM_DD_YY".
+`instadownloader` is a Python library built on top of [instaloader](https://instaloader.github.io/) for scraping and storing Instagram photos to generate training datasets. It is currently designed so that a user can download "All Photos", the "Most Recent" Photo, or the Nth-Most Recent Photos, for both public and private users. For private users, the login credentials must be provided.
 
-To read more about the documentation, visit the [docs](https://github.com/baileymorton989/instadownloader/tree/main/docs) folder.
+The script will save .jpg files for the photos downloaded, a pickle file with those raw .jpg files and a pickle file with the photos converted to numpy arrays. These photos will be stored in a folder with the following format : {username}_{today's date}, where today's date is in the format "MM_DD_YY".
+
+To read more about the documentation, visit the [src](https://github.com/baileymorton989/instadownloader/tree/main/src) folder.
 
 ## Installation
 
@@ -15,7 +16,7 @@ pip install instadownloader
 
 ## Usage
 
-Here is a simple example where the most recent photo is downloaded. A tkinter GUI will be used and all the user will need to do is choose whether the profile is public or private, provide the account name, a password if the account is private, as well the photo range that they desire. In this case, the photo range will be "Most Recent":
+Here is a simple example. A tkinter GUI will be used and all the user will need to do is choose whether the profile is public or private, provide the account name, a password if the account is private, as well the photo range that they desire.
 
 Example : 
 
