@@ -16,7 +16,7 @@ pip install instadownloader
 
 ## Usage
 
-Here is a simple example where the most recent photo is downloaded. A tkinter GUI will be used and all the user will need to do is choose whether the profile is public or private, provide the account name, a password if the account is private, as well the photo range that they desire. In this case, the photo range will be "Most Recent":
+Here is a simple example. A tkinter GUI will be used and all the user will need to do is choose whether the profile is public or private, provide the account name, a password if the account is private, as well the photo range that they desire.
 
 Example : 
 
