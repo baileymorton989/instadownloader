@@ -1,0 +1,1 @@
+from instadownloader import InstaDownloader, TkinterSelector
