@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Apr  4 23:33:24 2021
-
-@author: bam3k
-"""
-
-#we will use the script to scrape an insta account and create a file to be used for image-based machine learning tasks
-
 #instagram api
 import instaloader
 
