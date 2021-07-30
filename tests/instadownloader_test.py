@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jul 29 23:00:50 2021
-
-@author: bam3k
-"""
-
 import instadownloader
 import warnings
 
