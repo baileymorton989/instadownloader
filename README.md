@@ -2,7 +2,7 @@
 
 `instadownloader` is a Python library built on top of [instaloader](https://instaloader.github.io/) for scraping and storing Instagram photos to generate training datasets. It is currently designed so that a user can download "All Photos", the "Most Recent" Photo, or the Nth-Most Recent Photos, for both public and private users. For private users, the login credentials must be provided.
 
-The script will save the .jpg files for the photos downloaded, a pickle file with the raw .jpg files and a pickle file with the photos converted to numpy arrays. These photos will be stored in a folder with the following format : {user_name}_{today's date}, where today's date is in the format "MM_DD_YY".
+The script will save .jpg files for the photos downloaded, a pickle file with the raw .jpg files and a pickle file with the photos converted to numpy arrays. These photos will be stored in a folder with the following format : {user_name}_{today's date}, where today's date is in the format "MM_DD_YY".
 
 To read more about the documentation, visit the [docs](https://github.com/baileymorton989/instadownloader/tree/main/docs) folder.
 
